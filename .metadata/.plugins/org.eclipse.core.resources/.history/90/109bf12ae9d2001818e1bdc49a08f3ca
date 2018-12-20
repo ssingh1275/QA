@@ -1,0 +1,12 @@
+package HiveAutTestPackage;
+
+public class CreateDealChildClass {
+
+	public void CreateDealChildFunc() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("This is in Child Class");
+
+	}
+
+}

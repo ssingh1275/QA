@@ -1,0 +1,67 @@
+package HiveAutTestPackage;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CreateDealClass {
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		// TODO Auto-generated method stub
+		System.out.println("Creating New Hive Automation Project");
+		System.out.println();
+		
+		/*System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasingh\\Downloads\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://hive-qa.apps.discovery.com/clm/");
+		
+		//if (Thread.interrupted())  // Clears interrupted status!
+		      
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
+		//driver.findElement(By.id("username")).clear();
+		driver.findElement(By.id("okta-signin-username")).sendKeys("satvinder_singh@qadci.com");
+		driver.findElement(By.id("okta-signin-password")).sendKeys("Monumonu!2");
+		
+		//System.out.println(username);
+		
+		driver.findElement(By.id("okta-signin-submit")).click();
+		
+		Thread.sleep(5000);
+		
+		if(driver.getTitle().contains("HIVE - Home"))
+		    //Pass
+		    System.out.println("Page title contains \"HIVE - Home\" ");
+		else
+		    //Fail
+		    System.out.println("Page title doesn't contains \"HIVE - Home\" ");
+		
+		Thread.sleep(2000);
+		 	driver.findElement(By.id("inventorySubsystem-menuBarItem_text")).click();
+		  /*
+		Thread.sleep(2000);
+		//Clicking on the Deals
+		driver.findElement(By.xpath("//*[@id='dealsSubsystem-menuBarItem']")).click();
+		
+		//Create Deal Click
+		driver.findElement(By.id("addDealButton_label")).click();
+		
+		Thread.sleep(2000);
+		//Acquisition Click
+		driver.findElement(By.id("createAQDeal_text")).click();
+		*/
+		
+		
+		CreateDealChildClass cd= new CreateDealChildClass();
+		cd.CreateDealChildFunc();
+		System.out.println("This is in Parent Class");
+		
+		
+		
+	}
+
+}

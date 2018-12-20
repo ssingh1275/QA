@@ -1,0 +1,20 @@
+package learning;
+
+public class Car {
+
+	public int carnumwheels;
+	public String carcolor;
+	public int carnumseats;
+	public String carentertaintmentsystem;
+	
+	public void printMessage(int num){
+		System.out.println("Driver is called");
+	}
+	
+	public void printSeats(){
+		System.out.println("Seats Num: "+numseats);
+	}
+	public void about(){
+		System.out.println("This is Car");
+	}
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="243" started-at="2018-05-10T13:36:35Z" finished-at="2018-05-10T13:36:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="243" started-at="2018-05-10T13:36:35Z" finished-at="2018-05-10T13:36:35Z">
+      <class name="TestNGPackage.BusinessLoan">
+        <test-method status="PASS" signature="ComputerLoan()[pri:0, instance:TestNGPackage.BusinessLoan@32d992b2]" name="ComputerLoan" duration-ms="69" started-at="2018-05-10T13:36:35Z" finished-at="2018-05-10T13:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ComputerLoan -->
+        <test-method status="PASS" signature="officeLoan()[pri:0, instance:TestNGPackage.BusinessLoan@32d992b2]" name="officeLoan" duration-ms="18" started-at="2018-05-10T13:36:35Z" finished-at="2018-05-10T13:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- officeLoan -->
+      </class> <!-- TestNGPackage.BusinessLoan -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,14 @@
+package learning;
+
+public class Car {
+
+	private int numwheels;
+	private String color;
+	private int numseats;
+	private String entertaintmentsystem;
+	
+	public void printMessage(int num){
+		System.out.println("Driver is called");
+	}
+	
+}

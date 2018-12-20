@@ -1,0 +1,25 @@
+package HiveAutTestPackage;
+
+import org.openqa.selenium.By;
+
+	public void CreateDealFunc() {
+		// TODO Auto-generated method stub
+		System.out.println("Testing Method");
+		
+		driver.findElement(By.id("inventorySubsystem-menuBarItem_text")).click();
+		  
+		Thread.sleep(2000);
+		//Clicking on the Deals
+		driver.findElement(By.xpath("//*[@id='dealsSubsystem-menuBarItem']")).click();
+		
+		//Create Deal Click
+		driver.findElement(By.id("addDealButton_label")).click();
+		
+		Thread.sleep(2000);
+		//Acquisition Click
+		driver.findElement(By.id("createAQDeal_text")).click();
+		
+		
+	}
+
+}

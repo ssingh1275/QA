@@ -1,0 +1,9 @@
+package learning;
+
+public class Car {
+
+	
+	public void printMessage(int num){
+		System.out.println("Driver is called");
+	}
+}

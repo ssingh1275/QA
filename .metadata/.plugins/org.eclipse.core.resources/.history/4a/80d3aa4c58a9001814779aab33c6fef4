@@ -1,0 +1,11 @@
+package learning;
+
+public class Toyota extends Car{
+	public String toyotagps;
+	public String toyotabak;
+	public String toyotasafteypackage;
+	
+	public void about1(){
+		System.out.println("This is Toyota Car");
+	}
+}

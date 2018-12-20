@@ -1,0 +1,25 @@
+package learning;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello World...");
+		Car car = new Car();
+		car.numseats = 10;
+		
+		car.printSeats();
+	}
+
+	public void printMessage(){
+		System.out.println("Driver is called");
+	}
+	public void printMessage(int num){
+		System.out.println("Driver is called");
+	}
+
+	public void printMessage(String cartype){
+		System.out.println("Toyota Driver is called");
+	}
+	
+}

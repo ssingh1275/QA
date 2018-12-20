@@ -1,0 +1,20 @@
+package airlineBookingPkg;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class ticketBookingClass {
+
+
+		public static void main(String[] args)
+		{
+			// TODO Auto-generated method stub
+			System.out.println("Creating Booking Automate");
+			System.out.println();
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasingh\\Downloads\\chromedriver.exe");
+			driver.get("https://spicejet.com");
+	}
+
+}

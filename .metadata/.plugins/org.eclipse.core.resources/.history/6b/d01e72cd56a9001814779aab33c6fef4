@@ -1,0 +1,8 @@
+package learning;
+
+public class Toyota {
+	private String gps;
+	private String toyotabak;
+	private String toyotasafteypackage;
+	
+}

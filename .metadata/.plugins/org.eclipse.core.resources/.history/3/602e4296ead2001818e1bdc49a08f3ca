@@ -1,0 +1,42 @@
+package HiveAutTestPackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CreateDealChildClass extends CreateDealClass {
+
+	public void CreateDealChildFunc() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("This is in Child Class");
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasingh\\Downloads\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+	  
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	//Clicking on the Deals
+	driver.findElement(By.xpath("//*[@id='dealsSubsystem-menuBarItem']")).click();
+	
+	//Create Deal Click
+	driver.findElement(By.id("addDealButton_label")).click();
+	
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	//Acquisition Click
+	driver.findElement(By.id("createAQDeal_text")).click();
+	
+		
+	}
+
+}

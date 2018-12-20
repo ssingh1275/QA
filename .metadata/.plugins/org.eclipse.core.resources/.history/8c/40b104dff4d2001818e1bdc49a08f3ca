@@ -1,0 +1,74 @@
+package HiveAutTestPackage;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CreateDealChildClass extends CreateDealClass {
+
+	public void CreateDealChildFunc() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasingh\\Downloads\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://hive-qa.apps.discovery.com/clm/");
+		
+		//if (Thread.interrupted())  // Clears interrupted status!
+		      
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
+		//driver.findElement(By.id("username")).clear();
+		driver.findElement(By.id("okta-signin-username")).sendKeys("satvinder_singh@qadci.com");
+		driver.findElement(By.id("okta-signin-password")).sendKeys("Monumonu!2");
+		
+		//System.out.println(username);
+		
+		driver.findElement(By.id("okta-signin-submit")).click();
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		if(driver.getTitle().contains("HIVE - Home"))
+		    //Pass
+		    System.out.println("Page title contains \"HIVE - Home\" ");
+		else
+		    //Fail
+		    System.out.println("Page title doesn't contains \"HIVE - Home\" ");
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 	driver.findElement(By.id("inventorySubsystem-menuBarItem_text")).click();
+		 
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//Clicking on the Deals
+		driver.findElement(By.xpath("//*[@id='dealsSubsystem-menuBarItem']")).click();
+		
+		//Create Deal Click
+		driver.findElement(By.id("addDealButton_label")).click();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//Acquisition Click
+		driver.findElement(By.id("createAQDeal_text")).click();
+		
+					
+	
+	}
+}
